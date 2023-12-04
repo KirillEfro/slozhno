@@ -12,7 +12,6 @@ with open("phonebook_raw.csv", encoding="utf-8") as f:
 
 
 def main(contact_list: list):
-    """основная логика"""
     new_list = list()
     for item in contact_list:
         full_name = ' '.join(item[:3]).split(' ')
@@ -24,7 +23,6 @@ def main(contact_list: list):
 
 
 def union(contacts: list):
-    """функция обработки списка от одинаковых и пустых записях"""
     for contact in contacts:
         first_name = contact[0]
         last_name = contact[1]
